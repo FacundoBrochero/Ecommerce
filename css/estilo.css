@@ -97,6 +97,10 @@ footer {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 main .bienvenida {
   display: grid;
   place-items: center;
@@ -179,6 +183,37 @@ main .container-carrito {
 }
 main .container-carrito h2 {
   font-size: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+form {
+  color: white;
+}
+form .recuadro {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 72%, rgba(134, 134, 134, 0.462622549) 100%, rgb(0, 212, 255) 100%);
+  border: solid blue 0.1rem;
+  margin: 5rem;
+}
+form .recuadro .contenido {
+  margin: 3rem;
+}
+form .recuadro .contenido .titulo {
+  font-size: 3rem;
+  text-align: center;
+}
+form .recuadro .contenido .mb-3 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+form .recuadro .btn {
+  margin-left: 11rem;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=estilo.css.map */
