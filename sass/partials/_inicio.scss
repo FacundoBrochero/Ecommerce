@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../img/fondo.jpg);
+    background-size: cover;
+    height: 100vh;
+
+header{
+    .navbar{
+        
+
+        .container-fluid{   
+            padding-left: 0;
+            padding-right: 0;
+            border-bottom: solid white 0.1rem;
+
+            .navbar-brand{
+                color: white;
+                .img_logo_nav{
+                    height: 5rem;
+                    width: 5rem;   
+                    margin-left: 1.5rem;   
+                    margin-bottom: -0.5rem;  
+                    margin-top: -1rem;            
+                }              
+            }
+        }
+        .collapse{
+            justify-content: end;            
+
+            .navbar-nav{                     
+
+                .nav-item{
+                    display: flex;                                    
+                    
+                    .nav-link{
+                        font-size: 1.2rem;
+                        color: white;  
+                        margin-right: 5rem;                              
+                    }
+                }
+
+            }
+        }
+    }
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .login-box{          
+        margin-top: 4%; 
+        margin-bottom: 6%;           
+        width: 320px;
+        height: 420px;
+        color: white;
+        background: linear-gradient( white, rgb(56, 56, 56)) padding-box,linear-gradient(to right, darkblue, darkorchid) border-box;
+        border-radius: 3rem;
+        border: 1px solid transparent; 
+
+        .img_logo_sesion{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+
+            .img_logo_sesion__tamaño{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+            }
+
+        }       
+        }
+        .formulario{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 320px;
+            height: 367px;
+            margin-top: -2rem;
+            
+
+            
+            .user{
+                font-size: 1rem;
+                margin-bottom: 2rem;
+                margin-left: 0.5rem;
+
+            }
+            .pass{
+                font-size: 1rem;
+                margin-bottom: 6rem;
+                margin-right: 1.1rem;
+
+            }
+            .boton-sesion{
+                font-size: 1.2rem;
+                
+
+            }
+        }
+
+    }
+footer{
+    text-align: center;
+    color: white;
+    border-top:solid 0.1rem white;
+}    
+

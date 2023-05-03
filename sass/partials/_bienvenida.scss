@@ -1,0 +1,35 @@
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   main{
+    
+   .bienvenida{
+        display: grid;
+        place-items: center;                    
+        height: 100vh;
+        width: 100vh;
+        
+        .titulos-de-bienvenida{
+            display: grid;
+            place-items: center;           
+
+            .bienvenida_titulo__1{
+            text-align: center;            
+            text-transform: uppercase;
+            font-size: 4rem;
+            color: white; 
+            margin-top: -6rem;       
+          
+        }
+            .bienvenida_titulo__2{
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            margin-top: 3rem;
+        }
+    }
+    }
+   }

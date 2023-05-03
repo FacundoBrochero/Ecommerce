@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/fondo.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+body header .navbar .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: solid white 0.1rem;
+}
+body header .navbar .container-fluid .navbar-brand {
+  color: white;
+}
+body header .navbar .container-fluid .navbar-brand .img_logo_nav {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 1.5rem;
+  margin-bottom: -0.5rem;
+  margin-top: -1rem;
+}
+body header .navbar .collapse {
+  justify-content: end;
+}
+body header .navbar .collapse .navbar-nav .nav-item {
+  display: flex;
+}
+body header .navbar .collapse .navbar-nav .nav-item .nav-link {
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 5rem;
+}
+body main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .login-box {
+  margin-top: 4%;
+  margin-bottom: 6%;
+  width: 320px;
+  height: 420px;
+  color: white;
+  background: linear-gradient(white, rgb(56, 56, 56)) padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 3rem;
+  border: 1px solid transparent;
+}
+body .login-box .img_logo_sesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+body .login-box .img_logo_sesion .img_logo_sesion__tamaño {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+body .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 367px;
+  margin-top: -2rem;
+}
+body .formulario .user {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0.5rem;
+}
+body .formulario .pass {
+  font-size: 1rem;
+  margin-bottom: 6rem;
+  margin-right: 1.1rem;
+}
+body .formulario .boton-sesion {
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  border-top: solid 0.1rem white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main .bienvenida {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vh;
+}
+main .bienvenida .titulos-de-bienvenida {
+  display: grid;
+  place-items: center;
+}
+main .bienvenida .titulos-de-bienvenida .bienvenida_titulo__1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: white;
+  margin-top: -6rem;
+}
+main .bienvenida .titulos-de-bienvenida .bienvenida_titulo__2 {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-top: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main h1 {
+  color: white;
+  margin-bottom: 3rem;
+}
+main .container {
+  margin-top: 3rem;
+  background-color: transparent;
+}
+main .container .grid {
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+main .container .grid .item {
+  margin-left: 3rem;
+  border: solid 0.2rem white;
+  color: white;
+}
+main .container .grid .item .precio p {
+  text-align: center;
+  font-size: 3rem;
+}
+main .container .grid .item img {
+  width: 100%;
+  height: 170px;
+}
+main .container .grid .item h3 {
+  margin-top: 2rem;
+}
+main .container .grid .item p {
+  margin-top: 2.5rem;
+}
+main .container .grid .item .btn {
+  background-color: rgb(115, 250, 5);
+  color: blue;
+  margin-left: 13.5rem;
+  margin-bottom: 2rem;
+}
+main .container-carrito {
+  color: white;
+  margin-left: 11.5rem;
+}
+main .container-carrito h2 {
+  font-size: 4rem;
+}
+
+/*# sourceMappingURL=estilo.css.map */
