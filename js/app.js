@@ -22,7 +22,7 @@ document.addEventListener("keyup", (e) => {
     }
 })
 
-class curso {
+class Curso {
     constructor(titulo, precio) {
         this.titulo = titulo;
         this.precio = precio;
@@ -30,9 +30,9 @@ class curso {
     }
 }
 
-const curso1 = new curso("Curso de Introducción a las Finanzas", 35000);
-const curso2 = new curso("Curso de Criptomonedas: Inversiones y Finanzas. Bitcoins y Tecnología Blockchain", 65000);
-const curso3 = new curso("Curso de Cómo invertir y operar en la bolsa argentina online - Programa Integral", 65000);
+const curso1 = new Curso("Curso de Introducción a las Finanzas", 35000);
+const curso2 = new Curso("Curso de Criptomonedas: Inversiones y Finanzas. Bitcoins y Tecnología Blockchain", 65000);
+const curso3 = new Curso("Curso de Cómo invertir y operar en la bolsa argentina online - Programa Integral", 65000);
 
 curso1.gracias();
 curso2.gracias();
@@ -46,8 +46,15 @@ for (let i = 0; i < cursos.length; i++) {
 
 console.log(cursos.length)
 
-cursos.push("nuevo Curso al Final")
+cursos.push(new Curso("Nuevo Curso", 10000))
 console.log(cursos)
 
-cursos.unshift("nuevo Curso al inicio")
+cursos.unshift(new Curso("Curso al Inicio", 55000))
 console.log(cursos)
+
+let buscarCurso = prompt("Buscar Curso:");
+let cursoEncontrado = cursos.find(curso => curso.titulo.toLowerCase().includes(buscarCurso.toLowerCase()));
+
+alert("Nombre: " + cursoEncontrado.titulo + " Precio: $" + cursoEncontrado.precio);
+
+
