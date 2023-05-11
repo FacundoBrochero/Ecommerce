@@ -1,6 +1,5 @@
 const cursos = [
     { nombre: "Curso de Introducción a las Finanzas", precio: 35000, duracion: 2 + " meses" },
-    { nombre: "Curso de Criptomonedas Inversiones y Finanzas. Bitcoins y Tecnología Blockchain", precio: 55000, duracion: 3 + " meses" },
     { nombre: "Curso de Cómo invertir y operar en la bolsa argentina online - Programa Integral", precio: 65000, duracion: 5 + " meses" },
 ]
 
@@ -30,10 +29,6 @@ while (seleccion != "no") {
             case "Curso de Introducción a las Finanzas":
                 precio = 35000;
                 duracion = "2 meses";
-                break;
-            case "Curso de Criptomonedas Inversiones y Finanzas. Bitcoins y Tecnología Blockchain":
-                precio = 55000;
-                duracion = "3 meses";
                 break;
             case "Curso de Cómo invertir y operar en la bolsa argentina online - Programa Integral":
                 precio = 65000;
