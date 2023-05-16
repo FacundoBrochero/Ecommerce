@@ -11,6 +11,7 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Document</title>
   </head>
   <body>
@@ -24,20 +25,15 @@
               alt="logo nav"
               onclick="logoNav()"
             />
-          </a>
-          <button
-            type="button"
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#MenuNavegacion"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          </a>         
           <div id="#MenuNavegacion" class="collapse navbar-collapse">
             <ul class="navbar-nav">
-              <li class="nav-item">
+              <li class="nav-item">                
                 <a class="nav-link" href="./bienvenida.html">Home</a>
                 <a class="nav-link" href="./cursos.html">Cursos</a>
+                <a class="nav-link" href="../carrito.html">
+                  <i class="bi bi-cart"></i><span class="numerito">0</span>
+                </a>
                 <a class="nav-link" href="./calculo-del-interes.html">Interes Plazo Fijo</a>
               </li>
             </ul>
@@ -97,18 +93,7 @@
             </div>
             <button type="button" class="btn btn-dark">Agregar al carrito</button>
           </div>
-          </div> 
-          <div class="container-carrito">
-            <h2>Tu Carrito</h2>
-            <em>Tus productos seleccionados...</em>.
-        
-            <div class="container-cart">
-                
-                <h4 class="card-title">Producto C</h4>
-                <p class="card-text">Precio: </p>
-                <button type="button" class="btn btn-outline-primary">Eliminar</button>
-            </div>
-        </div>         
+          </div>                    
         </div>        
       </div>
       

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: url(../img/fondo.jpg);
   background-size: cover;
@@ -91,16 +95,6 @@ footer {
   border-top: solid 0.1rem white;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
 main .bienvenida {
   display: grid;
   place-items: center;
@@ -123,13 +117,6 @@ main .bienvenida .titulos-de-bienvenida .bienvenida_titulo__2 {
   font-size: 2rem;
   color: white;
   margin-top: 3rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 html {
@@ -185,12 +172,6 @@ main .container-carrito h2 {
   font-size: 4rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 form {
   color: white;
 }
@@ -214,6 +195,84 @@ form .recuadro .contenido .mb-3 {
 form .recuadro .btn {
   margin-left: 11rem;
   margin-bottom: 2rem;
+}
+
+.main-carrito {
+  display: flex;
+  flex-direction: column;
+}
+.main-carrito .titulo-principal {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 6rem;
+}
+.main-carrito .contenedor-carrito .carrito-vacio {
+  display: none;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.main-carrito .contenedor-carrito .carrito-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  margin-bottom: 3rem;
+  width: 80rem;
+}
+.main-carrito .contenedor-carrito .carrito-productos .carrito-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px white;
+  border-radius: 1rem;
+  color: white;
+}
+.main-carrito .contenedor-carrito .carrito-productos .carrito-producto img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+}
+.main-carrito .contenedor-carrito .carrito-productos .carrito-producto small {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.main-carrito .contenedor-carrito .carrito-productos .carrito-producto .carrito-producto-eliminar {
+  border: 0;
+  background-color: transparent;
+  color: yellow;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+.main-carrito .contenedor-carrito .carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-vaciar {
+  border: 0;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha {
+  display: flex;
+  text-transform: uppercase;
+}
+.main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-comprar {
+  border: 0;
+  border-radius: 1rem;
+  height: 6rem;
+  width: 10rem;
+  text-transform: uppercase;
+}
+.main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-total {
+  align-items: center;
+  font-size: 2rem;
+  margin-right: 4rem;
+  margin-top: -0.6rem;
+  color: white;
 }
 
 /*# sourceMappingURL=estilo.css.map */

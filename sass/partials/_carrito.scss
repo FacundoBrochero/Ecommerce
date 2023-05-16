@@ -1,0 +1,91 @@
+.main-carrito{
+    display: flex;
+    flex-direction: column;
+   
+
+     .titulo-principal{
+        color: white;
+        font-size: 4rem;
+        margin-bottom: 6rem;
+
+    }
+    .contenedor-carrito{
+        .carrito-vacio{
+            display: none;
+            color: white;
+            font-size: 2rem;  
+            margin-bottom: 3rem;     
+        }
+
+        .carrito-productos{
+            display: flex;
+            flex-direction: column;
+            gap: 7rem;
+            margin-bottom: 3rem;
+            width: 80rem;
+            
+                        
+            .carrito-producto{
+                
+                display: flex;     
+                justify-content: space-between ; 
+                align-items: center;
+                border: solid 1px white;    
+                border-radius: 1rem;  
+                color: white; 
+                img {
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 1rem;
+                }
+                small{
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+                .carrito-producto-eliminar{
+                    border: 0;
+                    background-color: transparent;
+                    color: yellow;
+                    font-size: 2rem;
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+        .carrito-acciones{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .carrito-acciones-vaciar{
+                border: 0;
+                background-color: white;
+                padding: 2rem;
+                border-radius: 1rem;
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+                
+            }
+            .carrito-acciones-derecha{
+                display: flex;
+                text-transform: uppercase;                
+               
+                .carrito-acciones-comprar{
+                    border: 0;
+                    border-radius: 1rem;
+                    height: 6rem;
+                    width: 10rem;                   
+                    text-transform: uppercase;
+                                       
+                    
+                }
+                .carrito-acciones-total{                    
+                    align-items: center;
+                    font-size: 2rem;
+                    margin-right: 4rem;
+                    margin-top: -0.6rem;
+                    color: white;                   
+                }
+            }
+        }
+    }
+
+   }
