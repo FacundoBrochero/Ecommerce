@@ -1,16 +1,16 @@
-let importe = document.getElementById("#importe");
-let plazo = document.getElementById("#plazo");
-let interes = 1.97;
-let respuesta = document.getElementById("#total-final")
-const botonCalcular = document.getElementById("#calcular")
+let capital = document.getElementById("#importe");
+let porcentaje = document.getElementById("#interes");
+let dias = document.getElementById("#plazo");
+let botonCalcular = document.getElementById(".btn")
+
 
 botonCalcular.addEventListener("click", calc)
-
+console.log(botonCalcular)
 function calc() {
 
-    let total = importe + plazo + interes
+    let montoFinal = Math.round(capital * porcentaje * dias) / 36000;
+    montoFinal.innerText = `$${montoFinal}`
 
-    respuesta.innerHTML = `${total}`;
 }
 
-console.log(botonCalcular)
+
