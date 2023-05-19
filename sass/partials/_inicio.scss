@@ -9,8 +9,7 @@ html{
 body{
     background: url(../img/fondo.jpg);
     background-size: cover;
-    height: 100vh;
-
+    
 header{
     .navbar{
         
@@ -54,6 +53,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    
     }
 
     .login-box{          
@@ -116,5 +116,8 @@ footer{
     text-align: center;
     color: white;
     border-top:solid 0.1rem white;
-}    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    }    
 

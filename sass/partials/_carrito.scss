@@ -1,38 +1,47 @@
 .main-carrito{
     display: flex;
     flex-direction: column;
-   
+    height: 55rem; 
+    .disabled{
+        display: none;
+    }        
 
      .titulo-principal{
         color: white;
         font-size: 4rem;
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
+        position: absolute;
+        top: 6rem;
 
     }
     .contenedor-carrito{
-        .carrito-vacio{
-            display: none;
+        
+        .disabled{
+                display: none;
+            }                  
+
+        .carrito-vacio{                       
             color: white;
-            font-size: 2rem;  
-            margin-bottom: 3rem;     
+            font-size: 4rem;  
         }
 
-        .carrito-productos{
+        .carrito-cursos{
             display: flex;
             flex-direction: column;
             gap: 7rem;
-            margin-bottom: 3rem;
-            width: 80rem;
-            
-                        
-            .carrito-producto{
-                
+            margin-bottom: 4rem;
+            width: 80rem; 
+            margin-top: 5rem;  
+                                    
+            .carrito-curso{                
                 display: flex;     
                 justify-content: space-between ; 
                 align-items: center;
                 border: solid 1px white;    
                 border-radius: 1rem;  
                 color: white; 
+                margin: 2rem;
+
                 img {
                     width: 10rem;
                     height: 10rem;
@@ -52,9 +61,13 @@
             }
         }
         .carrito-acciones{
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+                        
+            
+            
             .carrito-acciones-vaciar{
                 border: 0;
                 background-color: white;
@@ -86,6 +99,16 @@
                 }
             }
         }
+        .carrito-comprado{               
+            color: white;
+            font-size: 4rem;  
+            margin-bottom: 3rem;
+        }
     }
 
    }
+   
+   
+   
+    
+   

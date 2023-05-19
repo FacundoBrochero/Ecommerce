@@ -11,7 +11,10 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -25,16 +28,18 @@
               alt="logo nav"
               onclick="logoNav()"
             />
-          </a>         
+          </a>
           <div id="#MenuNavegacion" class="collapse navbar-collapse">
             <ul class="navbar-nav">
-              <li class="nav-item">                
+              <li class="nav-item">
                 <a class="nav-link" href="./bienvenida.html">Home</a>
                 <a class="nav-link" href="./cursos.html">Cursos</a>
                 <a class="nav-link" href="../carrito.html">
                   <i class="bi bi-cart"></i><span class="numerito">0</span>
                 </a>
-                <a class="nav-link" href="./calculo-del-interes.html">Interes Plazo Fijo</a>
+                <a class="nav-link" href="./calculo-del-interes.html"
+                  >Interes Plazo Fijo</a
+                >
               </li>
             </ul>
           </div>
@@ -44,66 +49,17 @@
     <main>
       <div class="container">
         <h1>Cursos en linea</h1>
-        <div class="grid">
-          <div class="item">
-            <img src="../img/criptomonedas.jpg"/>
-            <h3>Curso de Criptomonedas: Inversiones y Finanzas. Bitcoins y Tecnología Blockchain</h3>
-            <p>
-              Este curso Introductorio, que no requiere conocimientos previos, es para todos aquellos 
-              interesados en entender qué es y cómo funciona Bitcoin, la primer Criptomoneda. Buscaremos 
-              entender qué es lo que motivó su aparición en el mundo y cuál es el potencial que las criptomonedas 
-              tienen para cambiar para siempre la forma en la que utilizamos el dinero, ahorramos e invertimos las 
-              personas, así como casos de uso en el mundo actual.
-            </p>
-            <div class="precio">
-              <p>$65000</p>
-            </div>
-            <button type="button" class="btn btn-dark">Agregar al carrito</button>
-          </div>
-          <div class="item">
-            <img src="../img/introduccion a las finanzas.jpg"/>
-            <h3>Curso de Introducción a las Finanzas</h3>
-            <p>
-               En este curso aprenderás a manejar tus finanzas de manera efectiva para lograr sus objetivos económicos
-               a largo plazo. A lo largo del mismo, se explorarán los fundamentos de las finanzas personales, desde el 
-               concepto de riqueza y los ingresos pasivos, hasta la inversión en el mercado de valores. También se 
-               discutirán temas clave como el presupuesto y el ahorro, deudas y tasa de interés, renta fija y renta 
-               variable. Al final del curso, tendrás las herramientas necesarias para tomar decisiones financieras 
-               informadas y alcanzar la estabilidad financiera.
-
-            </p>
-            <div class="precio">
-              <p>$35000</p>
-            </div>
-            <button type="button" class="btn btn-dark">Agregar al carrito</button>
-          </div>
-          
-          <div class="item">
-            <img src="../img/operar en bolsa.jpg"/>
-            <h3>Curso de Cómo invertir y operar en la bolsa argentina online - Programa Integral</h3>
-            <p>
-              Conocer los diversos activos e instrumentos de inversión que existen para poder invertir en la 
-              bolsa argentina, para poder lograr que nuestro dinero rinda más y no se devalúe con el tiempo.
-              Por eso creamos este programa integral de inversiones, para que todos aquellos alumnos que se 
-              inscriban aprendan las diferentes nociones sobre la economía argentina y los activos e instrumentos 
-              bursátiles que existen para poder generar inversiones.                
-            </p>
-            <div class="precio">
-              <p>$65000</p>
-            </div>
-            <button type="button" class="btn btn-dark">Agregar al carrito</button>
-          </div>
-          </div>                    
-        </div>        
+        <div id="contenedor-cursos" class="grid">
+          <!--js  -->
+        </div>
       </div>
-      
     </main>
-    <footer>
+    <footer class="footer-cursos">
       <p>
         Copyright &copy; Facundo Brochero 2023, todos los derechos reservados.
       </p>
     </footer>
-    <script src="../js/app.js"></script>
+    <script src="../js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

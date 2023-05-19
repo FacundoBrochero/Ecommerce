@@ -57,8 +57,8 @@
               >Importe a Calcular</label
             >
             <input
-              type="text"
-              id="disabledTextInput1"
+              type="number"
+              id="Importe"
               class="form-control"
               placeholder="Importe"
             />
@@ -68,8 +68,8 @@
               >Plazo</label
             >
             <input
-              type="text"
-              id="disabledTextInput2"
+              type="number"
+              id="Plazo"
               class="form-control"
               placeholder="Plazo en dias"
             />
@@ -79,31 +79,25 @@
               >Interes</label
             >
             <input
-              type="text"
-              id="disabledTextInput3"
+              type="number"
+              id="Interes"
               class="form-control"
               placeholder="Porcentaje de Interes"
             />
           </div>
 
-          <div class="mb-3">
-            <label for="disabledTextInput" class="form-label"
-              >Interes mas el Capital Inicial</label
-            >
-            <input
-              type="text"
-              id="disabledTextInput4"
-              class="form-control"
-              placeholder="capital_interes"
-            />
-          </div>
+          <div class="total-interes">
+            <div class="total-interes-capital">
+              <p class="titulo-total-final">Total</p>
+              <p id="total-final">0</p>
+            </div>
          
             </div>
           </div>
         </div>
           
           <button type="reset" class="btn btn-primary">Borrar</button>
-          <button type="submit" class="btn btn-primary">Calcular</button>
+          <button id="calcular" type="submit" class="btn btn-primary">Calcular</button>
         </fieldset>
       </form>
     </main>
@@ -118,6 +112,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="/js/app.js"></script>
+    <script src="../js/calculo-del-interes.js"></script>
   </body>
 </html>

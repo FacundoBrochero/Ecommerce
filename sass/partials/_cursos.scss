@@ -4,12 +4,14 @@ html{
 }
 
 main{    
+    
         h1{
             color: white;
             margin-bottom: 3rem;
         }
     
         .container{
+            height: 60rem;
             margin-top: 3rem;
             background-color:transparent;   
                        
@@ -22,7 +24,7 @@ main{
                 align-items: center;
                 margin-bottom: 4rem;   
 
-                .item{                    
+                .curso{                    
                     margin-left: 3rem;
                     border: solid 0.2rem white;
                     color: white;
@@ -62,3 +64,7 @@ main{
         
     }
 }
+.footer-cursos{
+    position: relative;
+}
+
