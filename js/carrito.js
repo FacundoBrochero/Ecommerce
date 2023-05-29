@@ -116,5 +116,10 @@ function comprarCarrito() {
     contenedorCarritoCursos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
+    botonVaciar.classList.add("disabled")
+    contenedorTotal.classList.add("disabled")
+    botonComprar.classList.add("disabled")
+    tituloTotal.classList.add("disabled")
+    tituloCarrito.classList.add("disabled")
 
 } 
