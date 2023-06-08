@@ -97,9 +97,23 @@ function eliminarDelCarrito(e) {
 botonVaciar.addEventListener("click", vaciarCarrito);
 
 function vaciarCarrito() {
-    cursosEnCarrito.length = 0;
-    localStorage.setItem("cursos-en-carrito", JSON.stringify(cursosEnCarrito));
-    cargarCursosEnCarrito();
+    Swal.fire({
+        title: 'Estas Seguro?',
+        icon: 'question',
+        html:
+            `se estan por borrar ${cursosEnCarrito.reduce((acc, curso) => acc + (curso.cantidad), 0)} cursos`,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'SI',
+        cancelButtonText: 'NO',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            cursosEnCarrito.length = 0;
+            localStorage.setItem("cursos-en-carrito", JSON.stringify(cursosEnCarrito));
+            cargarCursosEnCarrito();
+        }
+    })
+
 }
 
 function actualizarTotal() {
@@ -109,17 +123,29 @@ function actualizarTotal() {
 
 botonComprar.addEventListener("click", comprarCarrito);
 function comprarCarrito() {
-    cursosEnCarrito.length = 0;
-    localStorage.setItem("cursos-en-carrito", JSON.stringify(cursosEnCarrito));
+    Swal.fire({
+        title: 'Estas Seguro?',
+        icon: 'question',
+        html:
+            `Estas por comprar ${cursosEnCarrito.reduce((acc, curso) => acc + (curso.cantidad), 0)} cursos y el total a pagar es $${cursosEnCarrito.reduce((acc, curso) => acc + (curso.precio * curso.cantidad), 0)}`,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'SI',
+        cancelButtonText: 'NO',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            cursosEnCarrito.length = 0;
+            localStorage.setItem("cursos-en-carrito", JSON.stringify(cursosEnCarrito));
 
-    contenedorCarritoVacio.classList.add("disabled");
-    contenedorCarritoCursos.classList.add("disabled");
-    contenedorCarritoAcciones.classList.add("disabled");
-    contenedorCarritoComprado.classList.remove("disabled");
-    botonVaciar.classList.add("disabled")
-    contenedorTotal.classList.add("disabled")
-    botonComprar.classList.add("disabled")
-    tituloTotal.classList.add("disabled")
-    tituloCarrito.classList.add("disabled")
-
-} 
+            contenedorCarritoVacio.classList.add("disabled");
+            contenedorCarritoCursos.classList.add("disabled");
+            contenedorCarritoAcciones.classList.add("disabled");
+            contenedorCarritoComprado.classList.remove("disabled");
+            botonVaciar.classList.add("disabled");
+            contenedorTotal.classList.add("disabled");
+            botonComprar.classList.add("disabled");
+            tituloTotal.classList.add("disabled");
+            tituloCarrito.classList.add("disabled")
+        }
+    })
+}

@@ -8,9 +8,13 @@ function login() {
 
     if (user == "Facundo" && pass == "1234" || user == "Profesor" && pass == 1234) {
         window.location = "../pages/bienvenida.html"
+
     } else {
-        alert("Algun dato esta Incorrecto")
-        window.location = "../inicio.html"
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Datos Incorrectos!',
+        })
     }
 }
 
