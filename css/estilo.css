@@ -12,6 +12,8 @@ html {
 body {
   background: url(../img/fondo.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 body header .navbar .container-fluid {
   padding-left: 0;
@@ -35,7 +37,7 @@ body header .navbar .collapse .navbar-nav .nav-item {
   display: flex;
 }
 body header .navbar .collapse .navbar-nav .nav-item .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   color: white;
   margin-right: 5rem;
 }
@@ -97,24 +99,24 @@ footer {
   width: 100%;
 }
 
-main .bienvenida {
+.bienvenida {
   display: grid;
   place-items: center;
   height: 100vh;
   width: 100vh;
 }
-main .bienvenida .titulos-de-bienvenida {
+.bienvenida .titulos-de-bienvenida {
   display: grid;
   place-items: center;
 }
-main .bienvenida .titulos-de-bienvenida .bienvenida_titulo__1 {
+.bienvenida .titulos-de-bienvenida .bienvenida_titulo__1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 4rem;
   color: white;
   margin-top: -6rem;
 }
-main .bienvenida .titulos-de-bienvenida .bienvenida_titulo__2 {
+.bienvenida .titulos-de-bienvenida .bienvenida_titulo__2 {
   text-align: center;
   font-size: 2rem;
   color: white;
@@ -125,116 +127,98 @@ html {
   font-size: 62.5%;
 }
 
-main h1 {
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body main h1 {
   color: white;
   margin-bottom: 3rem;
 }
-main .container {
-  height: 60rem;
+body main .container {
   margin-top: 3rem;
   background-color: transparent;
 }
-main .container .grid {
-  max-width: 1500px;
+body main .container .grid {
+  max-width: 3500px;
   display: grid;
   grid-template-columns: repeat(3, 380px);
+  grid-template-rows: repeat(1fr, 1fr, 1fr);
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
 }
-main .container .grid .curso {
+body main .container .grid .curso {
+  margin-top: 2rem;
   margin-left: 3rem;
   border: solid 0.2rem white;
   color: white;
 }
-main .container .grid .curso .precio p {
+body main .container .grid .curso .precio p {
   text-align: center;
   font-size: 3rem;
 }
-main .container .grid .curso img {
+body main .container .grid .curso img {
   width: 100%;
   height: 170px;
 }
-main .container .grid .curso h3 {
+body main .container .grid .curso h3 {
   margin-top: 2rem;
 }
-main .container .grid .curso p {
+body main .container .grid .curso p {
   margin-top: 2.5rem;
 }
-main .container .grid .curso .btn {
+body main .container .grid .curso .btn {
   background-color: rgb(115, 250, 5);
   color: blue;
   margin-left: 13.5rem;
   margin-bottom: 2rem;
 }
-main .container-carrito {
+body main .container-carrito {
   color: white;
   margin-left: 11.5rem;
 }
-main .container-carrito h2 {
+body main .container-carrito h2 {
   font-size: 4rem;
 }
-
-.footer-cursos {
-  position: relative;
+body .footer-cursos {
+  margin-top: auto;
 }
 
-form {
-  color: white;
-}
-form .recuadro {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 72%, rgba(134, 134, 134, 0.462622549) 100%, rgb(0, 212, 255) 100%);
-  border: solid blue 0.1rem;
-  margin: 5rem;
-}
-form .recuadro .contenido {
-  margin: 3rem;
-}
-form .recuadro .contenido .titulo {
-  font-size: 3rem;
-  text-align: center;
-}
-form .recuadro .contenido .mb-3 {
-  font-size: 2rem;
-  margin: 2rem;
-}
-form .recuadro .btn {
-  margin-left: 11rem;
-  margin-bottom: 2rem;
-}
-
-.main-carrito {
+body {
   display: flex;
   flex-direction: column;
-  height: 55rem;
+  min-height: 100vh;
 }
-.main-carrito .disabled {
+body .main-carrito .disabled {
   display: none;
 }
-.main-carrito .titulo-principal {
+body .main-carrito .titulo-principal {
   color: white;
   font-size: 4rem;
   margin-bottom: 4rem;
   position: absolute;
   top: 6rem;
 }
-.main-carrito .contenedor-carrito .disabled {
+body .main-carrito .contenedor-carrito .disabled {
   display: none;
 }
-.main-carrito .contenedor-carrito .carrito-vacio {
+body .main-carrito .contenedor-carrito .carrito-vacio {
+  margin-top: 15rem;
   color: white;
   font-size: 4rem;
 }
-.main-carrito .contenedor-carrito .carrito-cursos {
+body .main-carrito .contenedor-carrito .carrito-cursos {
   display: flex;
   flex-direction: column;
   gap: 7rem;
   margin-bottom: 4rem;
   width: 80rem;
-  margin-top: 5rem;
+  margin-right: 3rem;
+  margin-top: 10rem;
 }
-.main-carrito .contenedor-carrito .carrito-cursos .carrito-curso {
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -242,29 +226,46 @@ form .recuadro .btn {
   border-radius: 1rem;
   color: white;
   margin: 2rem;
+  width: 78rem;
 }
-.main-carrito .contenedor-carrito .carrito-cursos .carrito-curso img {
-  width: 10rem;
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso .carrito-producto-nombre {
+  margin-left: 2rem;
+  margin-right: 14rem;
+}
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso .carrito-producto-cantidad {
+  padding: 1rem;
+}
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso .carrito-producto-precio {
+  padding: 1rem;
+}
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso .carrito-producto-subtotal {
+  padding: 1rem;
+}
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso img {
+  width: 11.5rem;
   height: 10rem;
   border-radius: 1rem;
 }
-.main-carrito .contenedor-carrito .carrito-cursos .carrito-curso small {
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso small {
   font-size: 2rem;
   font-weight: bold;
 }
-.main-carrito .contenedor-carrito .carrito-cursos .carrito-curso .carrito-producto-eliminar {
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso p {
+  text-align: center;
+}
+body .main-carrito .contenedor-carrito .carrito-cursos .carrito-curso .carrito-producto-eliminar {
   border: 0;
   background-color: transparent;
   color: yellow;
   font-size: 2rem;
   margin-right: 1.5rem;
 }
-.main-carrito .contenedor-carrito .carrito-acciones {
+body .main-carrito .contenedor-carrito .carrito-acciones {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-vaciar {
+body .main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-vaciar {
   border: 0;
   background-color: white;
   padding: 2rem;
@@ -272,28 +273,35 @@ form .recuadro .btn {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
-.main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha {
+body .main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-izquierda {
+  margin-left: 2rem;
+}
+body .main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha {
   display: flex;
   text-transform: uppercase;
+  margin-right: 2.9rem;
 }
-.main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-comprar {
+body .main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-comprar {
   border: 0;
   border-radius: 1rem;
   height: 6rem;
   width: 10rem;
   text-transform: uppercase;
 }
-.main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-total {
+body .main-carrito .contenedor-carrito .carrito-acciones .carrito-acciones-derecha .carrito-acciones-total {
   align-items: center;
   font-size: 2rem;
   margin-right: 4rem;
   margin-top: -0.6rem;
   color: white;
 }
-.main-carrito .contenedor-carrito .carrito-comprado {
+body .main-carrito .contenedor-carrito .carrito-comprado {
   color: white;
   font-size: 4rem;
   margin-bottom: 3rem;
+}
+body .footer-carrito {
+  margin-top: auto;
 }
 
 /*# sourceMappingURL=estilo.css.map */

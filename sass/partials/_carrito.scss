@@ -1,7 +1,9 @@
-.main-carrito{
+body{
     display: flex;
     flex-direction: column;
-    height: 55rem; 
+    min-height: 100vh;
+.main-carrito{    
+    
     .disabled{
         display: none;
     }        
@@ -20,7 +22,8 @@
                 display: none;
             }                  
 
-        .carrito-vacio{                       
+        .carrito-vacio{    
+            margin-top: 15rem;                   
             color: white;
             font-size: 4rem;  
         }
@@ -31,7 +34,8 @@
             gap: 7rem;
             margin-bottom: 4rem;
             width: 80rem; 
-            margin-top: 5rem;  
+            margin-right: 3rem;
+            margin-top: 10rem;  
                                     
             .carrito-curso{                
                 display: flex;     
@@ -41,15 +45,32 @@
                 border-radius: 1rem;  
                 color: white; 
                 margin: 2rem;
-
+                width: 78rem;
+                .carrito-producto-nombre{
+                    margin-left: 2rem;
+                    margin-right: 14rem;
+                }
+                .carrito-producto-cantidad{
+                    padding: 1rem;
+                    
+                }
+                .carrito-producto-precio{
+                    padding: 1rem;
+                }
+                .carrito-producto-subtotal{
+                    padding: 1rem;
+                }
                 img {
-                    width: 10rem;
+                    width: 11.5rem;
                     height: 10rem;
                     border-radius: 1rem;
                 }
                 small{
                     font-size: 2rem;
                     font-weight: bold;
+                }
+                p{
+                    text-align: center;
                 }
                 .carrito-producto-eliminar{
                     border: 0;
@@ -64,9 +85,7 @@
 
             display: flex;
             justify-content: space-between;
-            align-items: center;
-                        
-            
+            align-items: center;        
             
             .carrito-acciones-vaciar{
                 border: 0;
@@ -77,9 +96,13 @@
                 margin-bottom: 1.5rem;
                 
             }
+            .carrito-acciones-izquierda{
+                margin-left: 2rem;
+            }
             .carrito-acciones-derecha{
                 display: flex;
-                text-transform: uppercase;                
+                text-transform: uppercase; 
+                margin-right: 2.9rem;               
                
                 .carrito-acciones-comprar{
                     border: 0;
@@ -107,8 +130,10 @@
     }
 
    }
-   
-   
+   .footer-carrito{
+   margin-top: auto;
+   }
+}
    
     
    

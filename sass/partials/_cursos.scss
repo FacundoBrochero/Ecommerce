@@ -2,7 +2,10 @@
 html{
     font-size: 62.5%;
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 main{    
     
         h1{
@@ -10,21 +13,22 @@ main{
             margin-bottom: 3rem;
         }
     
-        .container{
-            height: 60rem;
+        .container{            
             margin-top: 3rem;
             background-color:transparent;   
                        
 
             .grid{
-                max-width: 1500px;
+                max-width: 3500px;
                 display: grid;                
                 grid-template-columns: repeat(3, 380px);
+                grid-template-rows: repeat(1fr,1fr,1fr);
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 4rem;   
 
-                .curso{                    
+                .curso{                        
+                    margin-top: 2rem;           
                     margin-left: 3rem;
                     border: solid 0.2rem white;
                     color: white;
@@ -65,6 +69,8 @@ main{
     }
 }
 .footer-cursos{
-    position: relative;
+    margin-top: auto;
+
 }
 
+}

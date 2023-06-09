@@ -35,15 +35,15 @@ function cargarCursosEnCarrito() {
                 <h3>${curso.nombre}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
-                <small>cantidad</small>
+                <small>Cantidad</small>
                 <p>${curso.cantidad}</p>
                 </div>
                 <div class="carrito-producto-precio">
-                <small>precio</small>
+                <small>Precio</small>
                 <p>$${curso.precio}</p>
                 </div>
                 <div class="carrito-producto-subtotal">
-                <small>subtotal</small>
+                <small>Subtotal</small>
                 <p>$${curso.precio * curso.cantidad}</p>
                 </div>
                 <button class="carrito-producto-eliminar" id="${curso.id}">

@@ -25,5 +25,60 @@
         "duracion": "3 meses",
         "imagen": "../img/criptomonedas.jpg",
         "detalle":"Este curso Introductorio, que no requiere conocimientos previos, es para todos aquellos interesados en entender qué es y cómo funciona Bitcoin, la primer Criptomoneda. Buscaremos entender qué es lo que motivó su aparición en el mundo y cuál es el potencial que las criptomonedas tienen para cambiar para siempre la forma en la que utilizamos el dinero, ahorramos e invertimos las personas, así como casos de uso en el mundo actual."
+    },
+
+    {
+        "id": "Curso de Trading Online",
+        "nombre": "Curso de Trading Online",
+        "precio": 30000,
+        "duracion": "2 meses",
+        "imagen": "../img/trading.jpg",
+        "detalle":"Este curso Introductorio, que no requiere conocimientos previos, es para todos aquellos interesados en aprender sobre Análisis Técnico. Vamos a aprender las herramientas fundamentales para entender el mercado, detectar zonas de compra y venta, mediante el uso de acción de precio, indicadores y osciladores y psicología del Trading"
+    },
+
+    {
+        "id": "Curso-Economía-no-Especialistas",
+        "nombre": "Curso de Economía para no Especialistas",
+        "precio": 40000,
+        "duracion": "4 meses",
+        "imagen": "../img/economia.jpg",
+        "detalle":"El diseño del curso de Economía para no especialistas está preparado para que los alumnos descubran las vinculaciones, evidentes o no, entre la economía mundial, y las economías regionales, y principalmente, con la economía argentina. Como el curso fue diseñado para profesionales NO economistas, se utiliza un lenguaje directo, preciso"
+    },
+
+    {
+        "id": "Curso-Finanzas-no-Especialistas",
+        "nombre": "Curso de Finanzas para no Especialistas",
+        "precio": 15000,
+        "duracion": "3 meses",
+        "imagen": "../img/finanzas.jpg",
+        "detalle":"En el curso de Finanzas para no especialistas haremos una revisión de las distintas herramientas económico-financieras necesarias para que el alumno pueda medir la rentabilidad de un negocio, la proyección económico-financiera de un proyecto, el cálculo de tasa de interés y descuento, análisis de los distintos sistemas de amortización de préstamos, cálculo de VAN y TIR. "
+    },
+
+    {
+        "id": "Curso-Evaluación-Gestión-Negocios",
+        "nombre": "Curso de Evaluación y Gestión de Negocios a Distancia",
+        "precio": 35000,
+        "duracion": "4 meses",
+        "imagen": "../img/negocios.jpg",
+        "detalle":"Existen ideas de negocio y también existen negocios ideales. Plasmar una idea en un proyecto real requiere la utilización de recursos, en general, escasos y, en particular, costosos.Esta manera de adjetivar (costoso) no debe entenderse como imposible, sino debe entenderse que todo recurso tiene un valor.Combinar una buena idea de negocios con los recursos adecuados es solo el primer paso para llevar adelante el propósito comercial."
+    },
+
+    {
+        "id": "Curso-Mercado de Capitales-Sistema Financiero",
+        "nombre": "Curso de Mercado de Capitales y el Sistema Financiero",
+        "precio": 50000,
+        "duracion": "6 meses",
+        "imagen": "../img/mercado.jpg",
+        "detalle":"Este curso está diseñado para toda persona que busca invertir sus ahorros tanto en el mercado de capitales como en el sistema financiero para crear valor de largo plazo. A través del mismo, el alumno incorporará las bases conceptuales sobre los diferentes instrumentos de inversión necesarias que todo ahorrista necesita comprender antes de comenzar a invertir."
+    },
+
+    {
+        "id": "Curso-Fideicomisos",
+        "nombre": "Curso de Fideicomisos",
+        "precio": 25000,
+        "duracion": "3 meses",
+        "imagen": "../img/fideicomiso.jpg",
+        "detalle":"Permanentemente se nos presentan dudas o consultas sobre la forma de en qué podemos invertir nuestros ahorros o cómo podemos obtener una financiación por afuera del sistema bancario para lograr la concreción de proyectos o inversiones. Este curso nos brinda los conocimientos y herramientas para entender los términos legales y las distintas posibilidades de implementación de un fideicomiso."
     }
+    
 ]
